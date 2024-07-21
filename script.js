@@ -17,7 +17,7 @@ function createGrid(number){
         for (let j = 0; j < number; j++){
             const child = document.createElement("div");
             child.style.backgroundColor = "#95D2B3";
-            // child.style.margin = "5px";
+            
             child.style.width = `${SIDE/number}px`;
             child.style.height = `${SIDE/number}px`;
     
@@ -27,11 +27,6 @@ function createGrid(number){
                 let blue = Math.random()*255;
                 child.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
             });
-    
-            // child.addEventListener("mouseleave", () => {
-            //     child.style.backgroundColor = "#95D2B3";
-            // });
-    
             node.appendChild(child);
         }
         
