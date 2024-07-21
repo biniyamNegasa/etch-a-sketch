@@ -4,7 +4,7 @@ const container = document.querySelector(".container");
 const button = document.querySelector("button");
 
 
-const SIDE = Math.min(innerHeight/2, innerWidth/2);
+const SIDE = 600;
 
 function createGrid(number){
     while (container.lastChild) {
@@ -17,7 +17,7 @@ function createGrid(number){
         for (let j = 0; j < number; j++){
             const child = document.createElement("div");
             child.style.backgroundColor = "#95D2B3";
-            child.style.margin = "5px";
+            // child.style.margin = "5px";
             child.style.width = `${SIDE/number}px`;
             child.style.height = `${SIDE/number}px`;
     
